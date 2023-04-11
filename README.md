@@ -77,7 +77,11 @@ npm install -D eslint-plugin-react-hooks@4.6.0
 - .prettierrc file
 
 ```
-{}
+{
+"useTabs": true,
+"tabWidth": 4
+}
+
 ```
 
 - .gitignore
