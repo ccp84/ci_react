@@ -91,3 +91,30 @@ npm install -D eslint-plugin-react-hooks@4.6.0
 coverage/
 .vscode/
 ```
+
+## Using class state
+* Set the constructor
+```javascript
+constructor(props) {
+super(props);
+this.state = {
+//whatever you want to set the initial state to be
+};
+}
+```
+* Use setState to update state:
+```javascript
+handleClick() {
+this.setState(
+{
+//new state
+//will merge with variables not updated
+},
+() => {
+// use arrow function here to do anything that needs to happen AFTER state has changed
+}
+);
+//this will happen WHILE state is changing and use OLD state variables
+}
+
+```
