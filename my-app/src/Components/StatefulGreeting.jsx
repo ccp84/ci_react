@@ -6,22 +6,26 @@ class StatefulGreeting extends Component {
 		this.state = {
 			introduction: "Hello",
 			buttonText: "Exit",
+			counter: 0,
 		};
 	}
 
 	handleClick() {
-		this.setState(
-			{
+		this.setState((prevState) => {
+			return {
 				introduction:
-					this.state.introduction === "Hello" ? "Goodbye!" : "Hello",
-				buttonText:
-					this.state.buttonText === "Enter" ? "Exit" : "Enter",
-			},
-			() => {
-				console.log("inside arrow function", this.state.introduction);
-			}
-		);
-		console.log("after arrow function", this.state.introduction);
+					prevState.introduction === "Hello" ? "Goodbye!" : "Hello",
+				buttonText: prevState.buttonText === "Exit" ? "Enter" : "Exit",
+			};
+		});
+	}
+
+	increment() {
+		this.setState((prevState) => {
+			return {
+				counter: prevState.counter + 1,
+			};
+		});
 	}
 
 	render() {
@@ -33,6 +37,10 @@ class StatefulGreeting extends Component {
 				<button onClick={() => this.handleClick()}>
 					{this.state.buttonText}
 				</button>
+				<div>
+					<button onClick={() => this.increment()}>Count Up</button>
+					{this.state.counter}
+				</div>
 			</div>
 		);
 	}
