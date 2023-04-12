@@ -132,3 +132,10 @@ counter: prevState.counter + 1, // use previous value of state then mutate that 
 ## ES7 Snippets 
 
 * [Link to reference on snippets here](https://docs.google.com/document/d/1QtCwh_CcgXwbrHcGP4hlpOi37vylxurn-x4BznhbkBA/edit)
+
+
+## Conditional Rendering
+
+```javascript
+{this.state.isLoggedIn} ? (will render if isLoggedin is true) : ( will render is isLoggedin is false)
+```
