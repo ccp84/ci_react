@@ -128,3 +128,7 @@ counter: prevState.counter + 1, // use previous value of state then mutate that 
 });
 }
 ```
+
+## ES7 Snippets 
+
+* [Link to reference on snippets here](https://docs.google.com/document/d/1QtCwh_CcgXwbrHcGP4hlpOi37vylxurn-x4BznhbkBA/edit)
