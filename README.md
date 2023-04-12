@@ -118,3 +118,13 @@ this.setState(
 }
 
 ```
+* Update state using prevState
+```javascript
+increment() {
+this.setState((prevState, prevProps) => { //pass in arrow function to setState
+return { //return a state object
+counter: prevState.counter + 1, // use previous value of state then mutate that value 
+};
+});
+}
+```
