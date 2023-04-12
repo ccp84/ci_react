@@ -1,16 +1,13 @@
-// import logo from "./logo.svg";
-// import FunctionalGreeting from "./Components/FunctionalGreeting";
-// import StatefulGreeting from "./Components/StatefulGreeting";
-// import EventsClass from "./Components/EventsClass";
-// import EventsFunctional from "./Components/EventsFunctional";
-import EventBinding from "./Components/EventBinding";
+import ConditionalRenderingClass from "./Components/ConditionalRenderingClass";
+import ConditionalRenderingFunctional from "./Components/ConditionalRenderingFunctional";
 
 import "./App.css";
 
 function App() {
 	return (
 		<div className="App">
-			<EventBinding />
+			<ConditionalRenderingClass />
+			<ConditionalRenderingFunctional connected={false} />
 		</div>
 	);
 }
