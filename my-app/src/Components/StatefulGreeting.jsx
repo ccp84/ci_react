@@ -12,8 +12,10 @@ class StatefulGreeting extends Component {
 	handleClick() {
 		this.setState(
 			{
-				introduction: "Goodbye!",
-				buttonText: "Enter",
+				introduction:
+					this.state.introduction === "Hello" ? "Goodbye!" : "Hello",
+				buttonText:
+					this.state.buttonText === "Enter" ? "Exit" : "Enter",
 			},
 			() => {
 				console.log("inside arrow function", this.state.introduction);
