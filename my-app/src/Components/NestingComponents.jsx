@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import UserMessage from "./UserMessage";
-import UserData from "./UserData";
 
 export class NestingComponents extends Component {
 	constructor(props) {
@@ -12,11 +11,28 @@ export class NestingComponents extends Component {
 		};
 	}
 
+	handleLogin = () => {
+		this.setState({
+			isLoaded: true,
+			isLoggedIn: true,
+		});
+	};
+
+	handleLogout = () => {
+		this.setState({
+			isLoaded: false,
+			isLoggedIn: false,
+		});
+	};
+
 	render() {
 		return (
 			<div>
-				<UserData isLoaded={this.state.isLoaded} />
-				<UserMessage isLoggedIn={this.state.isLoggedIn} />
+				<UserMessage
+					isLoggedIn={this.state.isLoggedIn}
+					handleLogin={this.handleLogin}
+					handleLogout={this.handleLogout}
+				/>
 			</div>
 		);
 	}
