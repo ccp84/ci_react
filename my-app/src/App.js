@@ -1,10 +1,10 @@
 import "./App.css";
-import RenderingLists from "./Components/RenderingLists";
+import LifecyclesCDM from "./Components/LifecyclesCDM";
 
 function App() {
 	return (
 		<div className="App">
-			<RenderingLists />
+			<LifecyclesCDM />
 		</div>
 	);
 }

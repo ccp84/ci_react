@@ -152,3 +152,29 @@ return <Book key={book.Title} book={book} />;
 </div>
 );
 ```
+
+## Template API cycle
+
+```javascript
+    getData = () => {
+    	setTimeout(() => {
+    		this.setState({
+    			data: "Data Loaded", // this would be your API call method
+    		});
+    	}, 3000);
+    };
+
+    componentDidMount() {
+    	this.getData(); // once page loaded, then fetch API data to reduce page load lag
+    }
+
+    render() {
+    	return (
+    		<div>
+    			<h1>{this.state.data}</h1>
+    		</div>
+    	);
+    }
+
+}
+```
