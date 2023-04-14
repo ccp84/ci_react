@@ -1,10 +1,10 @@
 import "./App.css";
-import NestingComponents from "./Components/NestingComponents";
+import RenderingLists from "./Components/RenderingLists";
 
 function App() {
 	return (
 		<div className="App">
-			<NestingComponents />
+			<RenderingLists />
 		</div>
 	);
 }
