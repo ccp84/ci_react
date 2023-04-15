@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateWithArrays from "./Components/UseStateWithArrays";
+import UseStateWithObjects from "./Components/UseStateWithObjects";
 
 function App() {
 	return (
 		<div className="App">
-			<UseStateWithArrays />
+			<UseStateWithObjects />
 		</div>
 	);
 }
