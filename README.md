@@ -181,3 +181,9 @@ return <Book key={book.Title} book={book} />;
 
 ## Install Axios to make HTTP requests
 * `npm install axios`
+* post to api via axios:
+```javascript
+postToApi = () => {
+axios.post("url", {});
+};
+```
