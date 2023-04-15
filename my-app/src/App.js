@@ -1,10 +1,10 @@
 import "./App.css";
-import SearchBar from "./Components/SearchBar";
+import ControlledFormHooks from "./Components/ControlledFormHooks";
 
 function App() {
 	return (
 		<div className="App">
-			<SearchBar />
+			<ControlledFormHooks />
 		</div>
 	);
 }
