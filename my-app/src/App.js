@@ -1,10 +1,10 @@
 import "./App.css";
-import ControlledForm from "./Components/ControlledForm";
+import UncontrolledForm from "./Components/UncontrolledForm";
 
 function App() {
 	return (
 		<div className="App">
-			<ControlledForm />
+			<UncontrolledForm />
 		</div>
 	);
 }
