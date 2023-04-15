@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateWithObjects from "./Components/UseStateWithObjects";
+import UseEffectCounterContainer from "./Components/UseEffectCounterContainer";
 
 function App() {
 	return (
 		<div className="App">
-			<UseStateWithObjects />
+			<UseEffectCounterContainer />
 		</div>
 	);
 }
