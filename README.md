@@ -187,3 +187,17 @@ postToApi = () => {
 axios.post("url", {});
 };
 ```
+
+## Install babel 
+`npm install -D babel-cli`
+* in package.json
+```
+"scripts" : {
+"build" : "babel src -d out"
+}
+```
+* create .babelrc
+```
+{
+"presets": ["@babel/preset-env"]
+}
