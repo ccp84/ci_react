@@ -1,10 +1,10 @@
 import "./App.css";
-import HTTPRequests from "./Components/HTTPRequests";
+import HTTPPosts from "./Components/HTTPPosts";
 
 function App() {
 	return (
 		<div className="App">
-			<HTTPRequests />
+			<HTTPPosts />
 		</div>
 	);
 }
